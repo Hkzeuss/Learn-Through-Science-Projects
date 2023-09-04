@@ -1,21 +1,39 @@
-NHẬP MÔN GIT
-***Các bước đẩy code lên Github bằng Git:
-1.git add: Sử dụng lệnh này để thêm các thay đổi từ thư mục làm việc của bạn vào sân khấu (staging area). Điều này chuẩn bị các thay đổi để được commit.
-2.git commit: Sử dụng lệnh này để commit các thay đổi đã được thêm vào sân khấu vào kho lưu trữ Git cục bộ của bạn. Trong quá trình commit, bạn sẽ phải cung cấp một thông điệp commit để mô tả mục đích của commit.
-3.git push: Sau khi bạn đã commit các thay đổi vào kho lưu trữ Git cục bộ, bạn có thể sử dụng lệnh này để đẩy các thay đổi lên kho lưu trữ từ xa, ví dụ như GitHub. Khi bạn thực hiện git push, bạn sẽ được yêu cầu đăng nhập vào tài khoản GitHub của bạn (nếu chưa đăng nhập) và sau đó các thay đổi sẽ được đẩy lên kho lưu trữ từ xa.
+____GIT____
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
-***Muốn xóa Foulder đã đẩy lên Github:
-1.	Chuyển đến thư mục mà chứa foulder trên PC/LAPTOP
-Syntax: cd /path/to/your/repository
-2.	git rm -r my-folder
-3.	git commit -m "Xóa thư mục my-folder"
-4.	git push origin [branch-name]
+**Lệnh kết nối Github với Git ( 2 lệnh ):**
+<br>
+*Thực hiện 2 lệnh sau đây trên Git Bash để kết nối Github-Git. Nếu chưa kết nối thì sẽ không thể tương tác từ Github<->Git được:*
+1. git config --global user.name "[your-username]"
+   <br>
+   *Trong đó: your-username là username bạn đặt trong tài khoản github của bạn*
+   <br>
+   *Ví dụ: git config --global user.name "Hkzeuss"*
+3. git config --global user.email "[your-email]"
+   <br>
+   *Trong đó: your-email là email bạn liên kết/đăng ký trong tài khoản github của bạn*
+   <br>
+   *Ví dụ: git config --global user.email "Hoangtientrungkien2k3@gmail.com"*
+   
+**Các bước đẩy code lên Github bằng Git:**<br>
+1. **git add:** Sử dụng lệnh này để thêm các thay đổi từ thư mục làm việc của bạn vào sân khấu (staging area). Điều này chuẩn bị các thay đổi để được commit.<br>
+	Syntax: **git add [tên-tệp-hoặc-thư-mục]**
+2. **git commit:** Sử dụng lệnh này để commit các thay đổi đã được thêm vào sân khấu vào kho lưu trữ Git cục bộ của bạn. Trong quá trình commit, bạn sẽ phải cung cấp một thông điệp commit để mô tả mục đích của commit.<br>
+	Syntax: **git commit -m "Thông điệp commit của bạn"**
+3. **git push:** Sau khi bạn đã commit các thay đổi vào kho lưu trữ Git cục bộ, bạn có thể sử dụng lệnh này để đẩy các thay đổi lên kho lưu trữ từ xa, ví dụ như GitHub. Khi bạn thực hiện git push, bạn sẽ được yêu cầu đăng nhập vào tài khoản GitHub của bạn (nếu chưa đăng nhập) và sau đó các thay đổi sẽ được đẩy lên kho lưu trữ từ xa.
+	Syntax: **git push origin [tên-nhánh]**
+--
+ 
+--
+**Muốn xóa Folder đã đẩy lên Github:**<br>
+*Gồm có 4 bước:* <br>
+1.Chuyển đến thư mục mà chứa folder trên PC/LAPTOP
+	Syntax: cd /path/to/your/repository<br>
+2.**git rm -r [my-folder]**<br>
+3.**git commit -m "Xóa thư mục my-folder"**<br>
+4.**git push origin [branch-name]**
 ---------------------------------------------------------------------------------------------------------------------------
-***Lệnh kết tối Github với Git ( 2 lệnh ):
-1.git config --global user.name "[your-username]"
-2.git config --global user.email "[your-email]"
----------------------------------------------------------------------------------------------------------------------------
-***Lệnh lấy code từ Github về Laptop/Pc:
+**Lệnh lấy code từ Github về Laptop/Pc:**
      git clone [ link địa chỉ kho lưu trữ GitHub]
 ***Tổng Hợp Lệnh Git phổ biến:
 	1. **git init**: Khởi tạo một kho lưu trữ Git mới trong thư mục làm việc hiện tại.
