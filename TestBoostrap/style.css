@@ -1,0 +1,34 @@
+:root{
+    --primary--color:#ffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.frame{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img_frame{
+    width: 230px;
+    height: 230px;
+    border: 4px solid var(--primary--color);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.text{
+    text-align: center;
+}
+
+#MainColor{
+    background-color: #bbccdb;
+}
