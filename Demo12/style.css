@@ -1,0 +1,62 @@
+:root{
+    --primary--color:#ffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.frame{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img_frame{
+    width: 230px;
+    height: 230px;
+    border: 4px solid var(--primary--color);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.text{
+    text-align: center;
+}
+
+#MainColor{
+    background-color: #e3e8ed;
+}
+
+#Main-Color2{
+    background-color: #e3e8ed;
+}
+
+
+.bg-footer{ /*Background chân trang*/
+    background-color: #3e3d59;
+}
+
+/*
+.footer-brand{
+    color: var(--bs-gray-500);
+}
+#Design-made-easy{
+    color: var(--bs-gray-500);
+}
+*/
+
+#Graphic-Design{
+    color: var(--bs-gray-900);
+}
+
+.list-unstyled li a{
+    text-decoration: none;
+    color: var(--bs-gray-500);
+
+}
