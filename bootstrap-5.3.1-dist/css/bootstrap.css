@@ -3200,6 +3200,10 @@ textarea.form-control-lg {
   background-color: #97c0f9a0;
 }
 
+.background-Demo06-1{
+  background-color: #6edff6;
+}
+
 .btn-outline-primary {
   --bs-btn-color: #0d6efd;
   --bs-btn-border-color: #0d6efd;
