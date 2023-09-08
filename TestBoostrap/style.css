@@ -38,8 +38,25 @@
 }
 
 
+.bg-footer{ /*Background chân trang*/
+    background-color: #3e3d59;
+}
 
+/*
+.footer-brand{
+    color: var(--bs-gray-500);
+}
+#Design-made-easy{
+    color: var(--bs-gray-500);
+}
+*/
 
+#Graphic-Design{
+    color: var(--bs-gray-900);
+}
 
+.list-unstyled li a{
+    text-decoration: none;
+    color: var(--bs-gray-500);
 
-
+}
