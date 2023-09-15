@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Blog</title>
+</head>
+<style>
+    table,
+    th,
+    td 
+    {
+        border: 2px solid;
+    }
+</style>
+
+<body>
+    <h2 style="text-align:center"> Blog Informationn </h2>
+    <table align="center" style="margin: 0px auto;">
+        <thead>
+            <tr>
+                <th>Blog ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Edit Blog</th>
+                <th>Remove Blog</th>
+                <th>Content Blog</th>
+                <th>Image Blog</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for blog in blogs %}
+            <tr>
+                <td>{{blog.BlogId}}</td>
+                <td>{{blog.Title}}</td>
+                <td>{{blog.Author_Name}}</td>
+                <td>{{blog.Start_Date}}</td>
+                <td>{{blog.End_Date}}</td>
+                <td>
+                    <a href="/update/{{blog.pk}}">Update</a>    
+                </td>
+                <td>
+                    <a href="/delete/{{blog.pk}}">Delete</a>
+                </td>
+                <td>{{blog.Content_Blog}}</td>
+                <td>
+                    <img src="{{ blog.Image_Blog.url }}" alt="Blog Image" width="100">
+                </td>
+                
+
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
